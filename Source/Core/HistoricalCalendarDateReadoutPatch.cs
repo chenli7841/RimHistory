@@ -1,6 +1,7 @@
 using HarmonyLib;
 using RimWorld;
 using UnityEngine;
+using Verse;
 
 namespace RimHistory.Core
 {
@@ -8,6 +9,8 @@ namespace RimHistory.Core
     [HarmonyPatch(typeof(GenDate), "DateReadoutStringAt", new[] { typeof(long), typeof(Vector2) })]
     internal static class HistoricalCalendarDateReadoutPatch
     {
+        private const string TargetScenarioName = "先秦";
+
         private static string FormatHistoricalDate(long ticks)
         {
             const long TicksPerDay = 60_000L;
@@ -29,6 +32,11 @@ namespace RimHistory.Core
 
         private static void Postfix(long absTicks, ref string __result)
         {
+            if (Find.Scenario == null || Find.Scenario.name != TargetScenarioName)
+            {
+                return;
+            }
+
             __result = FormatHistoricalDate(absTicks);
         }
     }
