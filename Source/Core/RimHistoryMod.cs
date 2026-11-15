@@ -1,3 +1,4 @@
+using HarmonyLib;
 using UnityEngine;
 using Verse;
 
@@ -10,7 +11,8 @@ namespace RimHistory
         public RimHistoryMod(ModContentPack content) : base(content)
         {
             settings = GetSettings<RimHistorySettings>();
-            Log.Message("[Historical RimWorld] Mod initialized.");
+            new Harmony("LiChen.RimHistory").PatchAll(typeof(RimHistoryMod).Assembly);
+            Log.Message("[RimHistory] Mod initialized.");
         }
 
         public override string SettingsCategory()
