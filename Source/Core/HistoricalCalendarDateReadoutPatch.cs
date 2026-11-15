@@ -1,5 +1,6 @@
 using HarmonyLib;
 using RimWorld;
+using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -38,6 +39,38 @@ namespace RimHistory.Core
             }
 
             __result = FormatHistoricalDate(absTicks);
+        }
+    }
+
+    [HarmonyPatch(typeof(Page_CreateWorldParams), "ResetFactionCounts")]
+    internal static class EasternZhouFactionSelectionPatch
+    {
+        private static readonly HashSet<string> Keep = new HashSet<string>
+        {
+
+            // 如果也要保留你自己的郑国派系，再加：
+            "Faction_Royal",
+            "Faction_Zheng",
+            "Faction_Qin",
+            "Faction_Chu",
+            "Faction_Jin",
+            "Faction_Qi",
+            "Faction_Lu",
+            "Faction_Wei",
+            "Faction_Locals"
+        };
+
+        private static void Postfix(ref List<FactionDef> ___factions)
+        {
+            if (Find.Scenario == null || Find.Scenario.name != "先秦")
+            {
+                ___factions.RemoveAll(faction => Keep.Contains(faction.defName));
+            }
+            else
+            {
+                ___factions.RemoveAll(faction => !Keep.Contains(faction.defName));
+
+            }
         }
     }
 }

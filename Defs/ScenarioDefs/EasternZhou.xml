@@ -8,4 +8,103 @@
       <summary>公元前772-221年中国（东周-秦灭六国）</summary>
     </scenario>
   </ScenarioDef>
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>Faction_Royal</defName>
+    <label>周朝王室</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum>
+      <li>(0.85, 0.60, 0.25)</li>
+    </colorSpectrum>
+</FactionDef>
+  <FactionDef ParentName="TribeRoughBase">
+    <defName>Faction_Zheng</defName>
+    <label>郑国</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum>
+      <li>(0.22, 0.68, 0.56)</li>
+    </colorSpectrum>
+  </FactionDef>
+  <FactionDef ParentName="TribeBase">
+    <defName>Faction_Qin</defName>
+    <label>秦国</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum>
+      <li>(0.24, 0.27, 0.34)</li>
+    </colorSpectrum>
+  </FactionDef>
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>Faction_Chu</defName>
+    <label>楚国</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum Inherit="False">
+      <li>(0.63, 0.24, 0.32)</li>
+    </colorSpectrum>
+  </FactionDef>
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>Faction_Jin</defName>
+    <label>晋国</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum Inherit="False">
+      <li>(0.38, 0.53, 0.78)</li>
+    </colorSpectrum>
+  </FactionDef>
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>Faction_Qi</defName>
+    <label>齐国</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum Inherit="False">
+      <li>(0.22, 0.65, 0.80)</li>
+    </colorSpectrum>
+  </FactionDef>
+<FactionDef ParentName="TribeBase">
+    <defName>Faction_Lu</defName>
+    <label>鲁国</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum>
+      <li>(0.68, 0.57, 0.79)</li>
+    </colorSpectrum>
+  </FactionDef>
+<FactionDef ParentName="TribeBase">
+    <defName>Faction_Wei</defName>
+    <label>卫国</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum>
+      <li>(0.78, 0.68, 0.43)</li>
+    </colorSpectrum>
+  </FactionDef>
+<FactionDef ParentName="TribeSavageBase">
+    <defName>Faction_Locals</defName>
+    <label>地方部落</label>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <colorSpectrum>
+      <li>(0.52, 0.58, 0.35)</li>
+    </colorSpectrum>
+  </FactionDef>
 </Defs>
