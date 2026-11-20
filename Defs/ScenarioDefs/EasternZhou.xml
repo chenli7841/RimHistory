@@ -8,6 +8,17 @@
       <summary>公元前772-221年中国（东周-秦灭六国）</summary>
     </scenario>
   </ScenarioDef>
+  <RimHistory.Core.EasternZhouWorldMapSettingsDef>
+    <defName>EasternZhouWorldMapSettings</defName>
+    <scenarioName>先秦</scenarioName>
+    <scaleFactor>4.0</scaleFactor>
+    <centerLatitude>34.5</centerLatitude>
+    <centerLongitude>111.5</centerLongitude>
+    <minLatitude>31</minLatitude>
+    <maxLatitude>37</maxLatitude>
+    <minLongitude>106</minLongitude>
+    <maxLongitude>126</maxLongitude>
+  </RimHistory.Core.EasternZhouWorldMapSettingsDef>
   <FactionDef ParentName="OutlanderFactionBase">
     <defName>Faction_Royal</defName>
     <label>周朝王室</label>

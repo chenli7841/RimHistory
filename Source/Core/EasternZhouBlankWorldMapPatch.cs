@@ -74,6 +74,7 @@ namespace RimHistory.Core
             finally
             {
                 Current.CreatingWorld = previousCreatingWorld;
+                EasternZhouWorldMapSettings.Clear();
             }
         }
     }
